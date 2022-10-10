@@ -1,5 +1,5 @@
-# UniMM
-## UniMM-UL##
+
+# UniMM-UL#
 
 PyTorch implementation for the paper:
 
@@ -16,7 +16,7 @@ All results are on [v1.0 of the Visual Dialog dataset][visdial-data]. Specifical
 
 
 
-### Table of Contents
+## Table of Contents
 
    * [Code](#Code)
       * [Download preprocessed data and Pre-trained checkpoints](#Download preprocessed data and pre-trained checkpoint)
@@ -26,15 +26,15 @@ All results are on [v1.0 of the Visual Dialog dataset][visdial-data]. Specifical
    * [Discriminative Results on v1.0 test](#Discriminative Results on v1.0 test)
    * [Reference](#Reference)
 
-### 
+## 
 
-### Code
+## Code
 
-##### Download preprocessed data and pre-trained checkpoint
+#### Download preprocessed data and pre-trained checkpoint ####
 
 We conduct experiments on [V1.0 VisDial dataset][visdial-data] and use the same preprocessed data and pre-trained model as the [baseline][vilbert-visdial].
 
-##### Unified Training with sparse annotations
+#### Unified Training with sparse annotations
 
 The preprocessed data is downloaded to `data/visdial` and the pre-trained model used in the paper are downloaded to `checkpoints-release`
 
@@ -54,7 +54,7 @@ python mytrain.py -batch_size 240  -batch_multiply 1 -lr 2e-5 -image_lr 2e-5 -ma
 
  
 
-##### Unified fine-tuning with dense annotations
+#### Unified fine-tuning with dense annotations
 
 To fine-tune UniMM-UL with dense annotations:
 
@@ -66,7 +66,7 @@ python my_dense_annotation_finetuning.py -batch_size 100 -batch_multiply 16  -lr
 
 
 
-#### Generative Results on v1.0 val
+## Generative Results on v1.0 val
 
 Ranking all candidate answer by sequence-level log-likelihood scores:
 
@@ -93,7 +93,7 @@ CUDA_VISIBLE_DEVICES=0,1 nohup python -u my_val_avg_lm.py -visdom_env tmp -val_d
 
 
 
-####  Discriminative Results on v1.0 test
+##  Discriminative Results on v1.0 test
 
 The below code snippet generates prediction files (i.e., "UniMM_UL_dense_ensemble_predictions.txt", "UniMM_UL_dense_single_predictions.txt", and "UniMM_UL_single_predictions.txt" ) which can be submitted to the [test server](https://eval.ai/web/challenges/challenge-page/518/leaderboard/1421) to get results on the test split. 
 
@@ -111,7 +111,7 @@ These discriminative  results are on v1.0 test-std.
 
  
 
-### Reference
+## Reference
 
 [vilbert-visdial]: https://arxiv.org/abs/1912.02379	"Large-scale Pretraining for Visual Dialog: A Simple State-of-the-Art Baseline"
 [vilbert]: https://arxiv.org/abs/1908.02265	"Vilbert: Pretraining task-agnostic visiolinguistic representations for vision-and-language tasks."
