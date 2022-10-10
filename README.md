@@ -1,5 +1,5 @@
 
-# UniMM-UL#
+# UniMM-UL
 
 PyTorch implementation for the paper:
 
@@ -15,7 +15,7 @@ If you find this work useful in your research, please cite:
 @inproceedings{UniMM_UL
   title={Unified Multimodal Model with Unlikelihood Training for Visual Dialog},
   author={Zihao Wang, Junli Wang, Changjun Jiang},
-  booktitle = {Proceedings of the 30th ACM International Conference on Multimedia},,
+  booktitle = {Proceedings of the 30th ACM International Conference on Multimedia},
   year={2022},
 }
 ``` 
