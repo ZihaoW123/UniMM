@@ -101,7 +101,7 @@ CUDA_VISIBLE_DEVICES=0,1 nohup python -u val_avg_lm.py -visdom_env tmp -val_dis 
 The below code snippet generates prediction files (i.e., "UniMM_UL_dense_ensemble_predictions.txt", "UniMM_UL_dense_single_predictions.txt", and "UniMM_UL_single_predictions.txt" ) which can be submitted to the [test server](https://eval.ai/web/challenges/challenge-page/518/leaderboard/1421) to get results on the test split. 
 
 ```
-CUDA_VISIBLE_DEVICES=0,1,2,3 python myevaluate.py -n_gpus 4 -save_name <name of model>
+CUDA_VISIBLE_DEVICES=0,1,2,3 python evaluate.py -n_gpus 4 -save_name <name of model>
 ```
 
 These discriminative results are on VisDial v1.0 test-std:
