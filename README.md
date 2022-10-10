@@ -16,12 +16,12 @@ All results are on [v1.0 of the Visual Dialog dataset][visdial-data]. Specifical
 
 
 
-### Table of Contents
+## Table of Contents
 
    * [Code](#code)
       * [Download preprocessed data and Pre-trained checkpoints](#Download-preprocessed-data-and-pre-trained-checkpoint)
       * [Unified Training with sparse annotations](#Unified-Training-with-sparse-annotations)
-      * [Unified fine-tuning with dense annotations](#Unified-fine-tuning-with dense-annotations)
+      * [Unified fine-tuning with dense annotations](#Unified-fine-tuning-with-dense-annotations)
    * [Generative Results on v1.0 val](#Generative-Results-on-v1.0-val)
    * [Discriminative Results on v1.0 test](#Discriminative-Results-on-v1.0-test)
    * [Reference](#Reference)
