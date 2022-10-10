@@ -12,14 +12,13 @@ All results are on [v1.0 of the Visual Dialog dataset][visdial-data]. Specifical
 If you find this work useful in your research, please cite:
 
 ```
-@article{visdial_bert
+@inproceedings{UniMM_UL
   title={Unified Multimodal Model with Unlikelihood Training for Visual Dialog},
   author={Zihao Wang, Junli Wang, Changjun Jiang},
-  journal={},
+  booktitle = {Proceedings of the 30th ACM International Conference on Multimedia},,
   year={2022},
 }
-```
-
+``` 
 
 ## Table of Contents
 
