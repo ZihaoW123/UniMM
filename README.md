@@ -22,8 +22,8 @@ All results are on [v1.0 of the Visual Dialog dataset][visdial-data]. Specifical
       * [Download preprocessed data and Pre-trained checkpoints](#Download-preprocessed-data-and-pre-trained-checkpoint)
       * [Unified Training with sparse annotations](#Unified-Training-with-sparse-annotations)
       * [Unified fine-tuning with dense annotations](#Unified-fine-tuning-with-dense-annotations)
-   * [Generative Results on v1.0 val](#Generative-Results-on-v1.0-val)
-   * [Discriminative Results on v1.0 test](#Discriminative-Results-on-v1.0-test)
+   * [Generative Results](#Generative-Results-on-v1.0-val)
+   * [Discriminative Results](#Discriminative-Results-on-v1.0-test)
    * [Reference](#Reference)
 
 ## 
@@ -92,7 +92,7 @@ CUDA_VISIBLE_DEVICES=0,1 nohup python -u my_val_avg_lm.py -visdom_env tmp -val_d
 
 
 
-##  Discriminative Results on VisDial v1.0 test
+##  Discriminative Results
 
 The below code snippet generates prediction files (i.e., "UniMM_UL_dense_ensemble_predictions.txt", "UniMM_UL_dense_single_predictions.txt", and "UniMM_UL_single_predictions.txt" ) which can be submitted to the [test server](https://eval.ai/web/challenges/challenge-page/518/leaderboard/1421) to get results on the test split. 
 
@@ -100,7 +100,7 @@ The below code snippet generates prediction files (i.e., "UniMM_UL_dense_ensembl
 CUDA_VISIBLE_DEVICES=0,1,2,3 python myevaluate.py -n_gpus 4 -save_name <name of model>
 ```
 
-These discriminative  results are on v1.0 test-std:
+These discriminative results are on VisDial v1.0 test-std:
 
 | Checkpoint                             | Mean  Rank | MRR   | R1    | R5    | R10   | NDCG  |
 |:--------------------------------------:|:----------:|:-----:|:-----:|:-----:|:-----:|:-----:|
