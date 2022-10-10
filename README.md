@@ -34,9 +34,9 @@ All results are on [v1.0 of the Visual Dialog dataset][visdial-data]. Specifical
 
 We conduct experiments on [V1.0 VisDial dataset][visdial-data] and use the same preprocessed data and pre-trained model as the [baseline][vilbert-visdial].
 
-#### Unified Training with sparse annotations
-
 The preprocessed data is downloaded to `data/visdial` and the pre-trained model used in the paper are downloaded to `checkpoints-release`
+
+#### Unified Training with sparse annotations
 
 Here we list the training arguments to train the important variants in the paper.
 
@@ -66,13 +66,13 @@ python my_dense_annotation_finetuning.py -batch_size 100 -batch_multiply 16  -lr
 
 
 
-## Generative Results on v1.0 val
-
-Ranking all candidate answer by sequence-level log-likelihood scores:
+## Generative Results
 
 ```
+# Ranking all candidate answer by sequence-level log-likelihood scores
 CUDA_VISIBLE_DEVICES=0,1 nohup python -u my_val_lm.py -visdom_env tmp -val_dis 0 -n_gpus 2 > val_lm.log 2>&1 &
 ```
+Generative results on VisDia v1.0 val:
 
 |    Checkpoint    | Mean  Rank |  MRR  |  R1   |  R5   |  R10  | NDCG  |
 | :--------------: | :--------: | :---: | :---: | :---: | :---: | :---: |
@@ -82,18 +82,17 @@ CUDA_VISIBLE_DEVICES=0,1 nohup python -u my_val_lm.py -visdom_env tmp -val_dis 0
 
 
 
-Ranking all candidate answer by token-level log-likelihood scores:
 
 ```
+# Ranking all candidate answer by token-level log-likelihood scores:
 CUDA_VISIBLE_DEVICES=0,1 nohup python -u my_val_avg_lm.py -visdom_env tmp -val_dis 0 -n_gpus 2 > val_avg_lm.log 2>&1 &
 
 ```
 
- "generative_results_v1.0_val/val_lm.log" and  "generative_results_v1.0_val/val_avg_lm.log" are logs with generative results.
 
 
 
-##  Discriminative Results on v1.0 test
+##  Discriminative Results on VisDial v1.0 test
 
 The below code snippet generates prediction files (i.e., "UniMM_UL_dense_ensemble_predictions.txt", "UniMM_UL_dense_single_predictions.txt", and "UniMM_UL_single_predictions.txt" ) which can be submitted to the [test server](https://eval.ai/web/challenges/challenge-page/518/leaderboard/1421) to get results on the test split. 
 
@@ -101,7 +100,7 @@ The below code snippet generates prediction files (i.e., "UniMM_UL_dense_ensembl
 CUDA_VISIBLE_DEVICES=0,1,2,3 python myevaluate.py -n_gpus 4 -save_name <name of model>
 ```
 
-These discriminative  results are on v1.0 test-std.
+These discriminative  results are on v1.0 test-std:
 
 | Checkpoint                             | Mean  Rank | MRR   | R1    | R5    | R10   | NDCG  |
 |:--------------------------------------:|:----------:|:-----:|:-----:|:-----:|:-----:|:-----:|
