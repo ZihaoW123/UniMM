@@ -22,7 +22,7 @@ All results are on [v1.0 of the Visual Dialog dataset][visdial-data]. Specifical
       * [Download preprocessed data and Pre-trained checkpoints](#Download preprocessed data and pre-trained checkpoint)
       * [Unified Training with sparse annotations](#Unified Training with sparse annotations)
       * [Unified fine-tuning with dense annotations](#Unified fine-tuning with dense annotations)
-   * [Generative Results on v1.0 val](#Generative Results on v1.0 val)
+   * [Generative Results on v1.0 val](#generative-results)
    * [Discriminative Results on v1.0 test](#Discriminative Results on v1.0 test)
    * [Reference](#Reference)
 
@@ -66,7 +66,7 @@ python my_dense_annotation_finetuning.py -batch_size 100 -batch_multiply 16  -lr
 
 
 
-## Generative Results on v1.0 val
+## Generative Results on v1.0 val[generative-results]
 
 Ranking all candidate answer by sequence-level log-likelihood scores:
 
