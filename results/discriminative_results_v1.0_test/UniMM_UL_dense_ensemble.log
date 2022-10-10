@@ -1,0 +1,132 @@
+nohup: ignoring input
+{'batch_multiply': 1,
+ 'batch_size': 80,
+ 'continue': False,
+ 'enable_visdom': 1,
+ 'image_lr': 2e-05,
+ 'img_loss_coeff': 1,
+ 'lm_loss_coeff': 1,
+ 'lr': 2e-05,
+ 'mask_prob': 0.15,
+ 'max_seq_len': 256,
+ 'model_config': 'config/bert_base_6layer_6conect.json',
+ 'n_gpus': 4,
+ 'neg_token_weight': 1,
+ 'nsp_loss_coeff': 1,
+ 'num_epochs': 400,
+ 'num_negative_samples': 1,
+ 'num_options': 100,
+ 'num_train_samples': 0,
+ 'num_val_samples': 0,
+ 'num_workers': 8,
+ 'overfit': False,
+ 'save_name': 'ensemble_5_neuralNDCG',
+ 'save_path': 'checkpoints/ensemble_5_neuralNDCG',
+ 'sequences_per_image': 8,
+ 'start_path': '',
+ 'test_dis': 1,
+ 'train_dis_rate': 0.5,
+ 'val_dis': 1,
+ 'visdial_image_feats': 'data/visdial/visdial_img_feat.lmdb',
+ 'visdial_processed_test': 'data/visdial/visdial_1.0_test_processed.json',
+ 'visdial_processed_train': 'data/visdial/visdial_1.0_train_processed.json',
+ 'visdial_processed_train_dense': 'data/visdial/visdial_1.0_train_dense_processed.json',
+ 'visdial_processed_train_dense_annotations': 'data/visdial/visdial_1.0_train_dense_annotations_processed.json',
+ 'visdial_processed_val': 'data/visdial/visdial_1.0_val_processed.json',
+ 'visdial_processed_val_dense_annotations': 'data/visdial/visdial_1.0_val_dense_annotations_processed.json',
+ 'visdial_tot_rounds': 11,
+ 'visdom_env': 'pretrain',
+ 'visdom_server': 'http://127.0.0.1',
+ 'visdom_server_port': 8097}
+model's option for predict_feature is  False
+dialog_encoder_nsp_path:  checkpoints/dense_neuralNDCG_transposed_loss1/visdial_dialog_encoder_5997.ckpt
+model's option for predict_feature is  False
+dialog_encoder_nsp_path:  checkpoints/dense_neuralNDCG_transposed_loss0/visdial_dialog_encoder_3998.ckpt
+model's option for predict_feature is  False
+dialog_encoder_nsp_path:  checkpoints/dense_neuralNDCG_transposed_loss0_1/visdial_dialog_encoder_3998.ckpt
+model's option for predict_feature is  False
+dialog_encoder_nsp_path:  checkpoints/dense_neuralNDCG_transposed_loss0_2/visdial_dialog_encoder_3998.ckpt
+model's option for predict_feature is  False
+dialog_encoder_nsp_path:  checkpoints/dense_neuralNDCG_transposed_loss0_2/visdial_dialog_encoder_5997.ckpt
+batch size for evaluation 1000
+test batches 10
+test batches 20
+test batches 30
+test batches 40
+test batches 50
+test batches 60
+test batches 70
+test batches 80
+test batches 90
+test batches 100
+test batches 110
+test batches 120
+test batches 130
+test batches 140
+test batches 150
+test batches 160
+test batches 170
+test batches 180
+test batches 190
+test batches 200
+test batches 210
+test batches 220
+test batches 230
+test batches 240
+test batches 250
+test batches 260
+test batches 270
+test batches 280
+test batches 290
+test batches 300
+test batches 310
+test batches 320
+test batches 330
+test batches 340
+test batches 350
+test batches 360
+test batches 370
+test batches 380
+test batches 390
+test batches 400
+test batches 410
+test batches 420
+test batches 430
+test batches 440
+test batches 450
+test batches 460
+test batches 470
+test batches 480
+test batches 490
+test batches 500
+test batches 510
+test batches 520
+test batches 530
+test batches 540
+test batches 550
+test batches 560
+test batches 570
+test batches 580
+test batches 590
+test batches 600
+test batches 610
+test batches 620
+test batches 630
+test batches 640
+test batches 650
+test batches 660
+test batches 670
+test batches 680
+test batches 690
+test batches 700
+test batches 710
+test batches 720
+test batches 730
+test batches 740
+test batches 750
+test batches 760
+test batches 770
+test batches 780
+test batches 790
+test batches 800
+tot test batches 800
