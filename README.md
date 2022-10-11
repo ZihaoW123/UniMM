@@ -127,19 +127,19 @@ These discriminative results are on VisDial v1.0 test-std:
 ## Reference
 ```
 @InProceedings{VisualDialog_2017_Das,
-author = {Das, Abhishek and Kottur, Satwik and Gupta, Khushi and Singh, Avi and Yadav, Deshraj and Moura, Jose M. F. and Parikh, Devi and Batra, Dhruv},
-title = {Visual Dialog},
-booktitle = {Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition (CVPR)},
-month = {July},
-year = {2017}
-}
+    author = {Das, Abhishek and Kottur, Satwik and Gupta, Khushi and Singh, Avi and Yadav, Deshraj and Moura, Jose M. F. and Parikh, Devi and Batra, Dhruv},
+    title = {Visual Dialog},
+    booktitle = {Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition (CVPR)},
+    month = {July},
+    year = {2017}
+    }
  
 @article{visdial_bert
-  title={Large-scale Pretraining for Visual Dialog: A Simple State-of-the-Art Baseline},
-  author={Vishvak Murahari and Dhruv Batra and Devi Parikh and Abhishek Das},
-  journal={arXiv preprint arXiv:1912.02379},
-  year={2019},
-}
+    title={Large-scale Pretraining for Visual Dialog: A Simple State-of-the-Art Baseline},
+    author={Vishvak Murahari and Dhruv Batra and Devi Parikh and Abhishek Das},
+    journal={arXiv preprint arXiv:1912.02379},
+    year={2019},
+    }   
 ```
 
 [vilbert-visdial]: https://arxiv.org/abs/1912.02379	"Large-scale Pretraining for Visual Dialog: A Simple State-of-the-Art Baseline"
