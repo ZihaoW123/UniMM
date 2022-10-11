@@ -13,15 +13,15 @@ If you find this work useful in your research, please cite:
 
 ```
 @inproceedings{UNIMM,
+    title = {Unified Multimodal Model with Unlikelihood Training for Visual Dialog},  
     author = {Wang, Zihao and Wang, Junli and Jiang, Changjun},
-    title = {Unified Multimodal Model with Unlikelihood Training for Visual Dialog},
+    booktitle = {Proceedings of the 30th ACM International Conference on Multimedia},
     year = {2022},
     isbn = {9781450392037},
     publisher = {Association for Computing Machinery},
     address = {New York, NY, USA},
     url = {https://doi.org/10.1145/3503161.3547974},
     doi = {10.1145/3503161.3547974}, 
-    booktitle = {Proceedings of the 30th ACM International Conference on Multimedia},
     pages = {4625–4634},
     numpages = {10},
     keywords = {vision and language, visual dialog, unlikelihood training},
