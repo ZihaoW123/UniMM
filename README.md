@@ -48,7 +48,19 @@ If you find this work useful in your research, please cite:
 
 We conduct experiments on [V1.0 VisDial dataset][visdial-data] and use the same preprocessed data and pre-trained model as the [baseline][vilbert-visdial].
 
-The preprocessed data is downloaded to `data/visdial` and the pre-trained model used in the paper are downloaded to `checkpoints-release`
+The preprocessed data is downloaded to `data/visdial` and the pre-trained model used in the paper are downloaded to `checkpoints-release` 
+ 
+
+```
+# Download preprocessed dataset and extracted features:
+sh scripts/download_preprocessed.sh
+```
+
+```
+# Download pre-trained checkpoints:
+sh scripts/download_checkpoints.sh
+```
+
 
 #### Unified Training with sparse annotations
 
