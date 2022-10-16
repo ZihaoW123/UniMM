@@ -12,7 +12,7 @@ The task of visual dialog requires a multimodal chatbot to answer sequential que
 </div>
 
 This repository contains code for reproducing generative and evaluation results with and without finetuning on dense annotations.
-All results are on [v1.0 of the Visual Dialog dataset][visdial-data]. Specifically, generative results are on v1.0 val, and discriminative results are on v1.0 test. 
+All results are on [v1.0 of the Visual Dialog dataset][visdial-data]. 
 
 If you find this work useful in your research, please cite:
 
