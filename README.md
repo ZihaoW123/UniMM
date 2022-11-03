@@ -82,7 +82,6 @@ To train the unified model without unlikelihood training (UniMM) on sparse annot
 ```
 python train.py -batch_size 240  -batch_multiply 1 -lr 2e-5 -image_lr 2e-5 -mask_prob 0.15 -sequences_per_image 6 -num_negative_samples 5 -start_path checkpoints-release/vqa_pretrained_weights -visdom_env ugvdce_gen_dis_wo_ul -neg_token_weight 0 
 ```
-
  
 
 #### Unified fine-tuning with dense annotations
@@ -93,8 +92,9 @@ To fine-tune UniMM-UL with dense annotations:
 python dense_annotation_finetuning.py -batch_size 100 -batch_multiply 16  -lr 5e-5 -image_lr 5e-5 -nsp_loss_coeff 0 -mask_prob 0.15 -sequences_per_image 2 -start_path <path to UniMM-UL> 
 ```
 
+#### Logging
 
-
+We early stop the training process based on the performance of the model on the val set. [Visdom](https://github.com/facebookresearch/visdom) is used for logging. Specify `visdom_server`, `visdom_port` and `enable_visdom` arguments in options.py to use this feature. 
 
 
 ## Generative Results
