@@ -14,7 +14,7 @@ The task of visual dialog requires a multimodal chatbot to answer sequential que
 This repository contains code for reproducing generative and evaluation results with and without finetuning on dense annotations.
 All results are on [v1.0 of the Visual Dialog dataset][visdial-data]. 
 
-If you find this work useful in your research, please cite:
+If you find this work useful in your research, please star this repo and cite the paper:
 
 ```
 @inproceedings{UNIMM,
